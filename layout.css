@@ -4,26 +4,18 @@
 }
 
 body {
-	background: linear-gradient(to top left, #431861,  #1CFBF7);
+	background: linear-gradient(to top left, #431861,  #6CDBD7);
 }
 
-#header {
-	height: 50px;
-	background: blue;
-	#position: absolute;
-	margin: 0 0 0 0;
-	border: 0 0 0 0;
-
-}
 #inner_wrapper {
 	/*
 	background: green;
 	*/
-	height: 980px;
+	height: 975px;
 	margin-top: 0;
-        margin-left: 50;
-	margin-right: 50;
-	margin-bottom: 50;
+        margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: 52px;
 	display: flex;
 }
 
@@ -42,7 +34,8 @@ body {
 }
 
 #right_box_1 {
-	background: green;
+	background-image: url('alttp_cover.jpg');
+	background-size: cover;
 	height: 345px;
 }
 
@@ -55,7 +48,9 @@ body {
 #right_box_3 {
 	background: #174A6D;
 	margin-top: 25px;
-	height: 285px;
+	height: 277;
+	border: 4px solid #454545;
+	background: linear-gradient(to top left, #777782,  #444444);
 }
 
 
@@ -63,7 +58,7 @@ body {
 	display: flex;
 	width: 1920;
 	height: 40px;
-	margin-top: 5px;
+	margin-top: 7px;
 	margin-bottom: 5px;
 	margin-left: 0;
 	margin-right: 0;
