@@ -1,7 +1,7 @@
 "use strict";
 function assert(val, msg) {
 	if (!val) {
-		//debugger;
+		throw msg;
 	}
 }
 
@@ -169,7 +169,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	function resetBoard(gol) {
 		gol.zeroBoard();
-
 		if (Math.random() < 0.4) {
 			//let pattern = strToBoard(gosper_glider_gun);
 			//let startx = 4;
@@ -177,7 +176,12 @@ document.addEventListener('DOMContentLoaded', function() {
 			let pattern = PATTERNS[randomInt(PATTERNS.length)];
 			let startx = randomInt(gol.getWidth() - pattern[0].length);
 			let starty = randomInt(gol.getHeight() - pattern.length);
-			gol.setRect(pattern, startx, starty);
+			
+			try {
+				gol.setRect(pattern, startx, starty);
+				return;
+			} catch (e) {
+			}
 		} else {
 			gol.newRandomBoard(randomScaledFloat(0.3, 0.7));
 		}
@@ -216,6 +220,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	}
 
-	setInterval(run_the_gol, 70);
+	setInterval(run_the_gol, 100);
 
 });
