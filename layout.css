@@ -53,6 +53,32 @@ body {
 	background: linear-gradient(to top left, #777782,  #444444);
 }
 
+.gol_container {
+	background: white;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.gol_container .row {
+	flex: auto;
+	display: flex;
+}
+
+
+.gol_container .cell {
+	flex: auto;
+	border: 1px solid black;
+	background: white;
+}
+
+.gol_container .cell.alive {
+	background: black;
+}
+
+.gol_container .cell.dead {
+	background: white;
+}
 
 #name {
 	display: flex;
