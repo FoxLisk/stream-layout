@@ -155,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	setInterval(tickLetters, 20);
 
 
-	let height = 40, width = 50;
+	let height = 35, width = 46;
 
 	var gol = new GameOfLife({
 		height: height,

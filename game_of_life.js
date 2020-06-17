@@ -448,7 +448,7 @@ function GameOfLife(config) {
 		for (var row_n = 0; row_n < sub_rect.length; row_n++) {
 			let this_row = board[row_n + start_row];
 			if (!this_row) {
-				debugger;
+				throw 'blah';
 			}
 			for (var col_n = 0; col_n < sub_rect[0].length; col_n++) {
 				let liveness = sub_rect[row_n][col_n];

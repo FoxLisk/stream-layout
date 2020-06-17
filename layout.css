@@ -11,26 +11,26 @@ body {
 	/*
 	background: green;
 	*/
-	height: 975px;
+	height: 1015px;
 	margin-top: 0;
-        margin-left: 50px;
-	margin-right: 50px;
-	margin-bottom: 52px;
+        margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 12px;
 	display: flex;
 }
 
 #amarec {
-	width: 1400;
-	height: 975;
+	width: 1480px;
+	height: 1015px;
 	background: blue;
 	font-size: 100px;
 }
 
 #right_column {
-	margin-left: 25px;
+	margin-left: 10px;
 	display: flex;
 	flex-direction: column;
-	width: 395px;
+	width: 410px;
 }
 
 #right_box_1 {
@@ -41,14 +41,14 @@ body {
 
 #right_box_2 {
 	background: purple;
-	margin-top: 25px;
+	margin-top: 10px;
 	height: 296px;
 }
 
 #right_box_3 {
 	background: #174A6D;
-	margin-top: 25px;
-	height: 277;
+	margin-top: 10px;
+	height: 347;
 	border: 4px solid #454545;
 	background: linear-gradient(to top left, #777782,  #444444);
 }
