@@ -1,4 +1,11 @@
 "use strict";
+function log_to_amarec(msg) {
+	let el = document.getElementById('log');
+	var new_span = document.createElement('p');
+	new_span.innerHTML = msg;
+	el.prepend(new_span);
+}
+
 function assert(val, msg) {
 	if (!val) {
 		throw msg;
@@ -142,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		    new ChangingElement(s, 240),
 		    new ChangingElement(k, 240),
 	    ],
-	    gol_el = document.getElementById('right_box_2'),
+	    gol_el = document.getElementById('gol'),
 	    starting_gol_html_elements,
 	    static_ticks_before_starting = 20,
 	    static_ticks = 0;

@@ -39,10 +39,23 @@ body {
 	height: 345px;
 }
 
+#right_box_1_controller {
+	background-image: url('alttp_cover.jpg');
+	background-size: cover;
+	height: 434px;
+}
+
 #right_box_2 {
 	background: purple;
 	margin-top: 10px;
 	height: 296px;
+}
+
+#controller_box {
+	background: purple;
+	margin-top: 10px;
+	height: 207;
+
 }
 
 #right_box_3 {
