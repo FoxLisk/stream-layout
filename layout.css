@@ -12,7 +12,7 @@ body {
 	background: green;
 	*/
 	height: 1015px;
-	margin-top: 0;
+	margin-top: 7;
         margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 12px;
@@ -95,7 +95,6 @@ body {
 
 #name {
 	display: flex;
-	width: 1920;
 	height: 40px;
 	margin-top: 7px;
 	margin-bottom: 5px;
