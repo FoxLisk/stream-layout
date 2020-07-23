@@ -96,8 +96,10 @@ body {
 #name {
 	display: flex;
 	height: 40px;
+	/*
 	margin-top: 7px;
 	margin-bottom: 5px;
+	*/
 	margin-left: 0;
 	margin-right: 0;
 	align-items: center;
