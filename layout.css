@@ -11,7 +11,7 @@ body {
 	/*
 	background: green;
 	*/
-	height: 1015px;
+	height: 1060px;
 	margin-top: 7;
         margin-left: 10px;
 	margin-right: 10px;
@@ -20,17 +20,18 @@ body {
 }
 
 #amarec {
-	width: 1480px;
-	height: 1015px;
+	width: 1413px;
+	height: 1060px;
 	background: blue;
 	font-size: 100px;
 }
 
 #right_column {
-	margin-left: 10px;
+	margin-left: 77px;
 	display: flex;
 	flex-direction: column;
 	width: 410px;
+	margin-bottom: 0px;
 }
 
 #right_box_1 {
