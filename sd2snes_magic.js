@@ -29,7 +29,6 @@ function sd2snes_magic() {
 		}
 
 		s.onclose = function (event) {
-			log_to_amarec('onclose');
 			log_to_amarec(event);
 			clearInterval(brrrr_interval_id);
 			self.init();
@@ -38,7 +37,6 @@ function sd2snes_magic() {
 		function handle_module_arraybuffer(ab) {
 			let module = new Int8Array(ab)[0];
 			if (module !== last_module) {
-				log_to_amarec(module);
 				console.log(module);
 				last_module = module;
 				if (module === DEAD_MODULE) {

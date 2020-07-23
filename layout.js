@@ -4,6 +4,11 @@ function log_to_amarec(msg) {
 	var new_span = document.createElement('p');
 	new_span.innerHTML = msg;
 	el.prepend(new_span);
+	if (el.childElementCount > 4) {
+		var c = el.children[el.children.length - 1];
+		c.remove();
+
+	}
 }
 
 function assert(val, msg) {
