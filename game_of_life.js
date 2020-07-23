@@ -497,6 +497,7 @@ function matrixToString(matrix, transform) {
 function flexBoxInitial(height, width) {
 	var container = document.createElement('div');
 	container.classList.add('gol_container');
+	container.classList.add('flex_col');
 	var els_matrix = [];
 	for (var row_n = 0; row_n < height; row_n++) {
 		var row_el = document.createElement('div');
