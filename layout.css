@@ -59,6 +59,14 @@ body {
 	background: purple;
 	margin-top: 10px;
 	height: 207;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#controller_box span {
+	font-size: 31px;
+	color: rgb(0, 0, 0);
 
 }
 
@@ -120,4 +128,13 @@ body {
 	font-size: 47px;
 	color: rgb(0, 0, 0);
 	margin-top: 50px;
+	font-family: cursive;
+}
+
+#controller_box .msg {
+	display: none;
+}
+
+#controller_box .msg.active {
+	display: block;
 }

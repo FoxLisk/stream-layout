@@ -1,0 +1,49 @@
+
+
+#nothing {
+	height: 530px;
+	width: 100%;
+}
+
+#graphics_wrapper {
+	display: flex;
+	width: 100%;
+	flex-direction:column;
+}
+#inner_graphics_wrapper {
+	display: flex;
+	height: 530px;
+}
+
+#left-empty {
+	width: 942px;
+}
+
+#graphic-col {
+	width: 87px;
+	#background-color: black;
+}
+
+#graphic-col .changeme {
+	margin-left: 20px;
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	font-family: cursive;
+}
+
+#empty {
+	height: 481px;
+}
+
+#passion {
+	display: flex;
+	flex-direction: row;
+}
+
+#passion .changeme {
+	margin-left: 40px;
+	font-size: 43px;
+	color: rgb(0, 0, 0);
+	font-family: cursive;
+}
+
