@@ -117,6 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		next.classList.add('active');
 	}
 
-	setInterval(rotate_messages, 1000 * 120);
+	setInterval(rotate_messages, 1000 * 30);
 
 });

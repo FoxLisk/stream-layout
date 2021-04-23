@@ -137,4 +137,15 @@ body {
 
 #controller_box .msg.active {
 	display: block;
+	margin: 10 10 10 10;
 }
+
+#tutorial_box {
+	background: grey;
+	margin-top: 10px;
+	height: 688px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
