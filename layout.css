@@ -7,6 +7,32 @@ body {
 	background: linear-gradient(to top left, #431861,  #6CDBD7);
 }
 
+@font-face {
+    font-family: "absalom";
+    src: url('fonts/absalom.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "blade runner";
+    src: url('fonts/blade runner.ttf') format('truetype');
+}
+@font-face {
+    font-family: "comic sans";
+    src: url('fonts/comic sans.ttf') format('truetype');
+}
+@font-face {
+    font-family: "galeforce";
+    src: url('fonts/galeforce.ttf') format('truetype');
+}
+@font-face {
+    font-family: "nightclub";
+    src: url('fonts/nightclub.ttf') format('truetype');
+}
+@font-face {
+    font-family: "zelda dx";
+    src: url('fonts/zelda dx.ttf') format('truetype');
+}
+
 #inner_wrapper {
 	/*
 	background: green;
@@ -23,7 +49,7 @@ body {
 	width: 1413px;
 	height: 1060px;
 	background: blue;
-	font-size: 100px;
+	font-size: 50px;
 }
 
 .flex_col {
@@ -128,7 +154,7 @@ body {
 	font-size: 47px;
 	color: rgb(0, 0, 0);
 	margin-top: 50px;
-	font-family: cursive;
+	font-family: comic sans;
 }
 
 #controller_box .msg {

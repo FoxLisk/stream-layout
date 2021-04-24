@@ -1,9 +1,5 @@
-
-*.css~
-*.un~
 *.swp
-*.html~
-*.js~
-alttp_cover.jpg.bak
+*.bak
 death_sound.mp3
-twitch api commands.txt
+*~
+detect.js
