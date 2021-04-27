@@ -116,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(rotate_messages, 1000 * 30);
 
+    log_to_amarec(window.obsstudio.pluginVersion);
+
 
     // i am having trouble making this robust to come-up order
     function open_websocket() {

@@ -11,7 +11,10 @@ body {
     font-family: "absalom";
     src: url('fonts/absalom.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: "andale mono";
+    src: url('fonts/andale mono.ttf') format('truetype');
+}
 @font-face {
     font-family: "blade runner";
     src: url('fonts/blade runner.ttf') format('truetype');
@@ -27,6 +30,14 @@ body {
 @font-face {
     font-family: "nightclub";
     src: url('fonts/nightclub.ttf') format('truetype');
+}
+@font-face {
+    font-family: "webdings";
+    src: url('fonts/webdings.ttf') format('truetype');
+}
+@font-face {
+    font-family: "wingdings";
+    src: url('fonts/wingdings.ttf') format('truetype');
 }
 @font-face {
     font-family: "zelda dx";
