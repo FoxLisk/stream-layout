@@ -7,9 +7,6 @@
 		<script type="text/javascript" src="changing_element.js"></script>
 		<script type="text/javascript" src="layout.js"></script>
 		<script type="text/javascript" src="detect.js"></script>
-		<!--
-		  <script type="text/javascript" src="sd2snes_magic.js"></script>
-		-->
 		<script type="text/javascript" src="game_of_life.js"></script>
 	</head>
 	<body>
@@ -30,25 +27,27 @@
 				</div>
 			</div>
 			<div id="right_column" class="flex_col">
-				<div id="right_box_1_controller">
-					<div id="gol" data-width="46" data-height="35">
+				<div id="right_box_1_billboard">
+					<div id="gol" data-width="46", data-height="50">
 						<div class="gol_container flex_col">
 						</div>
 					</div>
 				</div>
-				<div id="controller_box" >
-					<span class="msg active">!discord discord.gg/tUpQca7</span>
-					<!--
-					<span class="msg active">There's road work outside, I'll turn mic on when it quiets down.</span>
-					-->
-					<span class="msg">Hi friends <3</span>
-					<span class="msg">Race vs Caznode tomorrow at 9pm pacific</span>
-					<span class="msg">If you have any questions please ask away</span>
-					<!--
-					<span class="msg">Practice </span>  
-					-->
-				</div>
-				<div id="right_box_3">
+				<div id="right_box_3_billboard">
+                    <div id="user_message_wrapper">
+                        <span id="user_message">
+                            Your message here! See channel points.
+                        </span>
+                    </div>
+
+                    <div id="user_name_wrapper">
+                        <span id="paid_for">
+                            paid for by
+                        </span>
+                        <span id="user_name">
+                            Your name here
+                        </span>
+                    </div>
 				</div>
 			</div>
 		</div>

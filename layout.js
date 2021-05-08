@@ -31,6 +31,11 @@ document.addEventListener('DOMContentLoaded', function() {
             new ChangingElement(k, 240),
         ],
         gol_el = document.getElementById('gol'),
+        // disgusting to have these littered in even though they're
+        // not used on all layouts!! FILTHY!!! GET YOUR CODE UNDER CONTROL FOX!!!
+        user_message = document.getElementById('user_message'),
+        right_box_3_billboard = document.getElementById('right_box_3_billboard'),
+        user_name = document.getElementById('user_name'),
         starting_gol_html_elements,
         static_ticks_before_starting = 20,
         static_ticks = 0,
@@ -44,7 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setInterval(tickLetters, 20);
 
 
-    let height = 35, width = 46;
+    // having the gol code like this not factored out into a function anywhere
+    // is pretty annoying
+    let height = parseInt(gol_el.dataset.height, 10);
+    let width = parseInt(gol_el.dataset.width, 10);
 
     var gol = new GameOfLife({
         height: height,
@@ -107,14 +115,31 @@ document.addEventListener('DOMContentLoaded', function() {
 
     setInterval(run_the_gol, 100);
 
-    function rotate_messages() {
-        let active = message_wrapper.querySelector('.active');
-        let next = active.nextElementSibling || message_wrapper.firstElementChild;
-        active.classList.remove('active');
-        next.classList.add('active');
+    if (message_wrapper) {
+        function rotate_messages() {
+            let active = message_wrapper.querySelector('.active');
+            let next = active.nextElementSibling || message_wrapper.firstElementChild;
+            active.classList.remove('active');
+            next.classList.add('active');
+        }
+
+        setInterval(rotate_messages, 1000 * 30);
     }
 
-    setInterval(rotate_messages, 1000 * 30);
+
+    function update_bulletin_board(bulletin_board_event) {
+        if (!user_message || !right_box_3_billboard) {
+            console.log("Wrong layout, bucko. this shit is insufficiently modular!");
+            return;
+        }
+        user_message.textContent = bulletin_board_event.message;
+        if (!user_name) {
+            user_name = document.createElement('div');
+            user_name.setAttribute('id', 'user_name');
+            right_box_3_billboard.appendChild(user_name);
+        }
+        user_name.textContent = bulletin_board_event.username;
+    }
 
 
     // i am having trouble making this robust to come-up order
@@ -137,6 +162,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     //log_to_amarec('setting ' + l + ' to ' + obj.font);
                     l.style.fontFamily = obj.font;
                 }
+            } else if (obj.type === 'BulletinBoard') {
+                update_bulletin_board(obj);
             } else {
                 console.log('fell out');
             }
