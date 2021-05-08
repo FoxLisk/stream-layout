@@ -134,11 +134,23 @@ body {
 #user_message {
     font-style: italic;
     font-family: "delius swash";
+}
+
+#user_message.short_message {
     font-size: 30px;
+}
+
+#user_message.medium_message {
+    font-size: 25px;
+}
+
+#user_message.long_message {
+    font-size: 20px;
 }
 
 #user_message_wrapper {
     overflow: hidden;
+    height: 285px;
 }
 
 #user_name_wrapper {

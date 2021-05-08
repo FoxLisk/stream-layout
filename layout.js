@@ -132,6 +132,18 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log("Wrong layout, bucko. this shit is insufficiently modular!");
             return;
         }
+        var len = bulletin_board_event.message.length,
+            cls = 'short_message';
+        if (len > 180) {
+            cls = 'medium_message';
+        }
+        if (len > 250) {
+            cls = 'long_message';
+        }
+        user_message.classList.remove('short_message');
+        user_message.classList.remove('medium_message');
+        user_message.classList.remove('long_message');
+        user_message.classList.add(cls);
         user_message.textContent = bulletin_board_event.message;
         if (!user_name) {
             user_name = document.createElement('div');
