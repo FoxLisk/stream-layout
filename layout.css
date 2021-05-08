@@ -24,6 +24,10 @@ body {
     src: url('fonts/comic sans.ttf') format('truetype');
 }
 @font-face {
+    font-family: "delius swash";
+    src: url('fonts/delius swash.ttf') format('truetype');
+}
+@font-face {
     font-family: "galeforce";
     src: url('fonts/galeforce.ttf') format('truetype');
 }
@@ -38,6 +42,10 @@ body {
 @font-face {
     font-family: "wingdings";
     src: url('fonts/wingdings.ttf') format('truetype');
+}
+@font-face {
+    font-family: "papyrus";
+    src: url('fonts/papyrus.ttf') format('truetype');
 }
 @font-face {
     font-family: "zelda dx";
@@ -86,6 +94,12 @@ body {
 	height: 478px;
 }
 
+#right_box_1_billboard {
+	background-image: url('alttp_cover.jpg');
+	background-size: cover;
+	height: 695px;
+}
+
 #right_box_2 {
 	background: purple;
 	margin-top: 10px;
@@ -113,6 +127,60 @@ body {
 	height: 347;
 	border: 4px solid #454545;
 	background: linear-gradient(to top left, #777782,  #444444);
+    padding: 10px 10px 15px 10px;
+    font-color: yellow;
+}
+
+#right_box_3_billboard {
+	background: #174A6D;
+	margin-top: 10px;
+	height: 347px;
+	border: 4px solid #454545;
+	background: linear-gradient(to top left, #585858,  #383838);
+    padding: 10px 10px 15px 10px;
+    color: hotpink;
+    position: relative;
+}
+
+#user_message {
+    font-style: italic;
+    font-family: "delius swash";
+}
+
+#user_message.short_message {
+    font-size: 30px;
+}
+
+#user_message.medium_message {
+    font-size: 25px;
+}
+
+#user_message.long_message {
+    font-size: 20px;
+}
+
+#user_message_wrapper {
+    overflow: hidden;
+    height: 285px;
+}
+
+#user_name_wrapper {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    float:right;
+    font-family: Papyrus;
+    font-style: italic;
+}
+
+#paid_for {
+    font-size: 15px;
+}
+
+#user_name {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
 }
 
 .gol_container {
