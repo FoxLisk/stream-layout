@@ -144,7 +144,20 @@ document.addEventListener('DOMContentLoaded', function() {
         user_message.classList.remove('medium_message');
         user_message.classList.remove('long_message');
         user_message.classList.add(cls);
-        user_message.textContent = bulletin_board_event.message;
+
+        let words = bulletin_board_event.message.split(/\s+/).map(function(word) {
+            let emote_id = bulletin_board_event.emotes[word];
+            if (emote_id) {
+                var url = 'http://static-cdn.jtvnw.net/emoticons/v1/' + emote_id + '/2.0';
+                return '<img src="' + url + '">';
+            } else {
+                return word;
+            }
+        });
+        console.log(words);
+
+
+        user_message.innerHTML = words.join(' ');
         if (!user_name) {
             user_name = document.createElement('div');
             user_name.setAttribute('id', 'user_name');
@@ -153,7 +166,9 @@ document.addEventListener('DOMContentLoaded', function() {
         user_name.textContent = bulletin_board_event.username;
     }
 
-    log_to_amarec(window.obsstudio.pluginVersion);
+    if (window.obsstudio) {
+        log_to_amarec(window.obsstudio.pluginVersion);
+    }
 
 
     // i am having trouble making this robust to come-up order
@@ -173,7 +188,6 @@ document.addEventListener('DOMContentLoaded', function() {
             if (obj.type === 'FontChange') {
                 console.log('changing letters!!');
                 for (var l of letters) {
-                    //log_to_amarec('setting ' + l + ' to ' + obj.font);
                     l.style.fontFamily = obj.font;
                 }
             } else if (obj.type === 'BulletinBoard') {
