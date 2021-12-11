@@ -24,12 +24,20 @@ body {
     src: url('fonts/comic sans.ttf') format('truetype');
 }
 @font-face {
+    font-family: "cmu serif roman";
+    src: url('fonts/cmu serif roman.ttf') format('truetype');
+}
+@font-face {
     font-family: "delius swash";
     src: url('fonts/delius swash.ttf') format('truetype');
 }
 @font-face {
     font-family: "galeforce";
     src: url('fonts/galeforce.ttf') format('truetype');
+}
+@font-face {
+    font-family: "nasalization";
+    src: url('fonts/nasalization.otf') format('opentype');
 }
 @font-face {
     font-family: "nightclub";
@@ -138,13 +146,13 @@ body {
 	border: 4px solid #454545;
 	background: linear-gradient(to top left, #585858,  #383838);
     padding: 10px 10px 15px 10px;
-    color: hotpink;
+    color: #ffdeee;
     position: relative;
 }
 
 #user_message {
     font-style: italic;
-    font-family: "delius swash";
+    font-family: "andale mono";
 }
 
 #user_message.short_message {
@@ -170,7 +178,7 @@ body {
     bottom: 10px;
     float:right;
     font-family: Papyrus;
-    font-style: italic;
+    /* font-style: italic;*/
 }
 
 #paid_for {
@@ -234,6 +242,7 @@ body {
 	color: rgb(0, 0, 0);
 	margin-top: 50px;
 	font-family: comic sans;
+    font-family: cmu serif roman;
 }
 
 #controller_box .msg {
